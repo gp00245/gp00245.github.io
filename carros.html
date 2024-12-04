@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .carros-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .carro {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .carro:hover {
+            transform: scale(1.05);
+        }
+
+        .carro img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .carro h2 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .carro p {
+            color: #666;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Carros</h1>
+    </header>
+
+    <main class="carros-container">
+        <!-- Carro 1 -->
+        <div class="carro">
+            <img src="https://cdn.motor1.com/images/mgl/Oo3P9R/s1/mercedes-amg-g63-grand-edition.webp" alt="Carro Esportivo">
+            <h2>mercedes g63</h2>
+            <p>Descrição: Um carro rápido e moderno, ideal para quem gosta de velocidade.</p>
+            <p><strong>Preço:</strong> R$ 2.247.900</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Carro 2 -->
+        <div class="carro">
+            <img src="https://image1.mobiauto.com.br/images/api/images/v1.0/60164711/transform/fl_progressive,f_webp,q_80" alt="bmw m8">
+            <h2>bmw m3</h2>
+            <p>Descrição: Um SUV espaçoso, confortável e ideal para toda a família.</p>
+            <p><strong>Preço:</strong> R$  1.320.950.</p>
+            <button>Comprar</button>
+        </div>
+
+        <!-- Carro 3 -->
+        <div class="carro">
+            <img src="https://quatrorodas.abril.com.br/wp-content/uploads/2017/03/koenigsegg_one-1_6.jpeg?crop=1&resize=1212,909" alt="koenigsegg">
+            <h2>koenigsegg</h2>
+            <p>Descrição: Um carro sustentável e econômico, perfeito para o futuro.</p>
+            <p><strong>Preço:</strong> R$ 20 milhões </p>
+            <button>Comprar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja de Carros. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
